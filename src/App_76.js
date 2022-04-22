@@ -11,7 +11,6 @@ function App_76() {
     return (
         <Router>
             <Navbar_76 />
-
             <Switch>
                 <Route exact path='/'>
                     <Home_76 />
