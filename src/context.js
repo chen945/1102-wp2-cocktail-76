@@ -15,7 +15,6 @@ const AppProvider = ({ children }) => {
             const data = await response.json();
             console.log("data", data);
             const { drinks } = data;
-
             if (drinks) {
                 const newCocktails = drinks.map((item) => {
                     const {
@@ -25,13 +24,12 @@ const AppProvider = ({ children }) => {
                         strAlcoholic,
                         strGlass,
                     } = item;
-
                     return {
                         id: idDrink,
                         name: strDrink,
                         image: strDrinkThumb,
                         info: strAlcoholic,
-                        glass: strGlass,
+                        galss: strGlass,
                     };
                 });
                 setCocktails(newCocktails);
